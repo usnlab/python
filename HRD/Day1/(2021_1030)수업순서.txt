@@ -1,0 +1,35 @@
+프로그램설치
+visual code 다운로드
+https://code.visualstudio.com/download
+
+anaconda 다운로드
+https://www.anaconda.com/products/individual
+
+
+ ㄴ vsCode먼저설치   https://code.visualstudio.com/download
+ ㄴ 아나콘다설치      https://www.anaconda.com/products/individual/download-success
+ ㄴ 파이썬,빅데이터=BigData
+	ㄴ시각화(차트그래프,맵지도,워드클라우드) + 파이썬기반문법적용
+	ㄴ분산파일처리 하듑(리눅스기반,하듑,vsCode)
+	ㄴAI학습러닝(딥러닝,머신러닝)==>알파고,추천,의료,번역,환경
+ 	ㄴR프로그램(통계프로그램)
+	ㄴ서버웹페이지프로그램(파이썬Django,파이썬Flask)
+
+이원하씨 깃주소
+https://github.com/snscrawler
+
+아나콘다 Navigator선택
+   Home선택  Applications on: ck선택
+    VScode편집기 Launch버튼클릭
+
+ㄴ C:\Mtest\1030day 작업폴더 생성
+   VScode편집기 File메뉴 => open Folder를 1030day선택
+   글꼴조작  ctrl + 글꼴확대/ ctrl - 글꼴축소
+
+1주차 
+ 출력, 변수, 연산, 입력, 형변환, 제어if, 반복문
+ 리스트, 딕션, 튜플
+ 함수
+ 예외처리 
+ 파일처리 
+
