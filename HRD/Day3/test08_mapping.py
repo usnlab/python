@@ -71,7 +71,8 @@ with open(geo_path, mode='r', encoding='utf-8') as ff :
 
 #seoul_municipalities_geo.json  ==> close()안해도 되는  with open(seoul_municipalities_geo.json  , r, 인코딩 )  as  ff 
 #json형태저장 dumps,  json형태읽기 loads, 
-with open('./Day3/data/seoul_municipalities_geo.json', mode='r', encoding='utf-8') as ff :
+#with open('./Day3/data/seoul_municipalities_geo.json', mode='r', encoding='utf-8') as ff :
+with open('../Data/data/seoul_municipalities_geo.json', mode='r', encoding='utf-8') as ff :
     geo_data=json.loads(ff.read())
     map = folium.Map(location=[37.55262899509166, 126.93777255354891], zoom_start=12)
     folium.Choropleth( geo_data=geo_data,
@@ -82,7 +83,8 @@ with open('./Day3/data/seoul_municipalities_geo.json', mode='r', encoding='utf-8
                    line_opacity=0.5).add_to(map)
 
 
-geo_path  = './Day3/data/서울시+행정구역+시군구+정보+(좌표계_+WGS1984).json'
+#geo_path  = './Day3/data/서울시+행정구역+시군구+정보+(좌표계_+WGS1984).json'
+geo_path  = '../Data/data/서울시+행정구역+시군구+정보+(좌표계_+WGS1984).json'
 with open(geo_path, mode='r', encoding='utf-8') as ff :
     geo_data = json.load(ff)
     print('geo_data ', geo_data)
@@ -100,5 +102,7 @@ with open(geo_path, mode='r', encoding='utf-8') as ff :
             popup=popup, 
             icon=folium.Icon(color='blue', icon='star')).add_to(map)
 
-map.save('./Day3/dataZ/map08.html')
-webbrowser.open('file://'+os.path.realpath('./Day3/dataZ/map08.html'))
+# map.save('./Day3/dataZ/map08.html')
+# webbrowser.open('file://'+os.path.realpath('./Day3/dataZ/map08.html'))
+map.save('../Data/dataZ/map08.html')
+webbrowser.open('file://'+os.path.realpath('../Data/dataZ/map08.html'))
